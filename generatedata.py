@@ -14,9 +14,10 @@ def generate_students(num_students):
             'city': fake.city(),
             'state': fake.state_abbr(),
             'zip': fake.zipcode(),
-        }
-        students.append(student)
+        } #Generates values for each variable in student object
+        students.append(student) #Adds value to end of current list
     return students
+    #Function to generate list of student values based upon the requested number of students
 
 def write_to_csv(data, filename):
     fieldnames = ['id', 'name', 'dob', 'street', 'city', 'state', 'zip']
@@ -24,6 +25,7 @@ def write_to_csv(data, filename):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(data)
+        #Function to write values to CSV
 
 if __name__ == '__main__':
     num_students = 100000
