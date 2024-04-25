@@ -11,7 +11,7 @@ BSTNode::BSTNode(std::string newName, std::string newStreet, std::string newCity
     ID = newID;
     left = newLeft;
     right = newRight;
-}
+} //Student Node Structure
 
 // Getters
 std::string BSTNode::getName()
