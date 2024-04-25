@@ -21,7 +21,8 @@ int main()
     std::string tempString;
     BSTree BST;
     BSTNode* student;
-
+    //Variable declarations
+    
     inputFile.open("students.csv");
     while(getline(inputFile, tempData))
     {
@@ -38,7 +39,7 @@ int main()
         std::getline(inputString, zip, ',');
         std::getline(inputString, tempString, '\n'); // Just to get passed the break
         BST.BSTInsert(new BSTNode(name, street, city, state, zip, id));
-    }
+    } //Loops through file to insert student data into BST
     
 
     std::cout << "COMPLETE!\n";
