@@ -1,6 +1,6 @@
 #include "BSTNode.h"
 
-
+//Student Node Class
 BSTNode::BSTNode(std::string newName, std::string newStreet, std::string newCity, std::string newState, std::string newZipCode, long long int newID, BSTNode* newLeft, BSTNode* newRight)
 {
     name = newName;
