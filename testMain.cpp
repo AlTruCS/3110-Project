@@ -38,7 +38,7 @@ int main()
         std::getline(inputString, zip, ',');
         std::getline(inputString, tempString, '\n'); // Just to get passed the break
         BST.BSTInsert(new BSTNode(name, street, city, state, zip, id));
-    }
+    } //Loops through file to insert student data into BST
     
 
     std::cout << "COMPLETE!\n";
