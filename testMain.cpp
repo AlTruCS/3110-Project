@@ -47,8 +47,14 @@ int main()
     {
         std::cout << "SEARCH BY ID: FAILED\n"; 
     }
+    else
+    {
+        std::cout << "SEARCH BY ID: " << student->getName() << "\nStudent ID: " << student->getID() << "\n";
+    }
+    // BST.BSTDelete(964024);
     // std::cout << "SEARCH BY ID: " << student->getID() << " Name: " << student->getName() <<  "\n";
-
+    BST.BSTUpdate(BST.BSTSearchByID(964024), "TEST", "TEST", "TEST", "TEST", "TEST");
+    BST.BSTSearchByName(BST.getRoot(), "TEST");
     sleep(1);
 
 

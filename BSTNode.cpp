@@ -13,6 +13,12 @@ BSTNode::BSTNode(std::string newName, std::string newStreet, std::string newCity
     right = newRight;
 }
 
+BSTNode::~BSTNode()
+{
+    delete left;
+    delete right;
+}
+
 // Getters
 std::string BSTNode::getName()
 {
@@ -63,6 +69,10 @@ void BSTNode::setCity(std::string newCity)
 void BSTNode::setZipCode(std::string newZipCode)
 {
     zipCode = newZipCode;
+}
+void BSTNode::setState(std::string newState)
+{
+    state = newState;
 }
 void BSTNode::setID(long long int newID)
 {
