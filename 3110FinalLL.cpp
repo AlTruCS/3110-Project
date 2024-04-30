@@ -16,7 +16,7 @@ struct Student
     string state;
     string zip;
     Student* next;
-}; //Student Structure
+};
 
 class StudentList 
 {
@@ -35,7 +35,7 @@ public:
             current = current->next;
             delete temp;
         }
-    } //Destructor
+    }
 
     void addStudent(int id, const string& name, const string& dob, const string& street, const string& city, const string& state, const string& zip) 
     {
@@ -48,22 +48,21 @@ public:
         newStudent->state = state;
         newStudent->zip = zip;
         newStudent->next = nullptr;
-        // Fills values for new student object
-        
+
         if (!head) 
         {
             head = newStudent;
-        } //Assigns student to front of list if there are no other students
+        } 
         else 
         {
             Student* current = head;
             while (current->next) 
             {
                 current = current->next;
-            } //Loops until finding end of list
+            }
             current->next = newStudent;
-        } 
-    } //Function to add an additional student
+        }
+    }
 
     void deleteStudent(int id) 
     {
@@ -80,7 +79,7 @@ public:
             delete temp;
             cout << "Student with ID " << id << " deleted." << endl;
             return;
-        } //Deletes student at front of list if they are the only one in the list
+        }
 
         Student* prev = nullptr;
         Student* current = head;
@@ -88,19 +87,18 @@ public:
         {
             prev = current;
             current = current->next;
-        } //Searches through list until finding the specified ID or end of list
+        }
 
         if (!current) 
         {
             cout << "Student with ID " << id << " not found." << endl;
             return;
-        } //Notice if the student ID is not found within the list
+        }
 
         prev->next = current->next;
         delete current;
         cout << "Student with ID " << id << " deleted." << endl;
-        //If the ID is found, deletes the matching student
-    } //Deletes a student object from a supplied ID number
+    }
 
     Student* searchById(int id) 
     {
@@ -110,11 +108,11 @@ public:
             if (current->id == id) 
             {
                 return current;
-            } //If the ID is found, returns the student that matches it
+            }
             current = current->next;
-        } //Loops through list until the student is found or the list ends
+        }
         return nullptr;
-    } //Searches for a student object by ID number
+    }
 
     Student* searchByName(const string& name) 
     {
@@ -124,11 +122,11 @@ public:
             if (current->name == name) 
             {
                 return current;
-            } //If the name is found, returns the student object
+            }
             current = current->next;
-        } //Loops through list until the student is found or the list ends
+        }
         return nullptr;
-    } //Searches for a student object from a supplied name
+    }
 
     void updateStudent(int id, const string& newName, const string& newDob, const string& newStreet, const string& newCity, const string& newState, const string& newZip) 
     {
@@ -142,12 +140,12 @@ public:
             student->state = newState;
             student->zip = newZip;
             cout << "Student with ID " << id << " updated." << endl;
-        } //Updates student value with all specified values if the ID is found
+        } 
         else 
         {
             cout << "Student with ID " << id << " not found." << endl;
         }
-    } //Function to update existing student information
+    }
 
     void printStudents() 
     {
@@ -163,8 +161,8 @@ public:
         {
             cout << "ID: " << current->id << ", Name: " << current->name << ", DOB: " << current->dob << ", Address: " << current->street << ", " << current->city << ", " << current->state << ", " << current->zip << endl;
             current = current->next;
-        } //Loops through list and prints each student's information
-    } //Function to print all student object information
+        }
+    }
 
     void readFromCSV(const string& filename) 
     {
@@ -173,7 +171,7 @@ public:
     {
         cout << "Error: Unable to open file " << filename << endl;
         return;
-    } //Notice for if the file cannot be found
+    }
 
     string line;
     int lineNumber = 0;
@@ -186,7 +184,7 @@ public:
         while (getline(ss, token, ',')) 
         {
             tokens.push_back(token);
-        } //Adds value to vector of current student information
+        }
 
         if (tokens.size() == 7) 
         {
@@ -194,7 +192,7 @@ public:
             try 
             {
                 id = stoi(tokens[0]);
-            } //Converts the first token to an integer and assigns it to the ID value
+            } 
             catch (const std::invalid_argument& e) 
             {
                 continue;
@@ -207,17 +205,17 @@ public:
             string state = tokens[5];
             string zip = tokens[6];
             addStudent(id, name, dob, street, city, state, zip);
-        } //Once the vector has all values, creates a student variable with all supplied information
+        } 
         else 
         {
             cout << "Error: Invalid data format on line " << lineNumber << ": " << line << endl;
         }
-    } //Loops through each line of file to retrieve student data for each student
+    }
 
     file.close();
-} //Function to take data from csv file and convert it into student objects
+    }
     
-}; //End of student list class
+};
 
 void displayMenu() 
 {
@@ -267,7 +265,7 @@ int main()
                 getline(cin, zip);
                 studentList.addStudent(id, name, dob, street, city, state, zip);
                 break;
-            } //Switch case to input information for adding a student
+            }
             case 2: 
             {
                 int id;
@@ -275,7 +273,7 @@ int main()
                 cin >> id;
                 studentList.deleteStudent(id);
                 break;
-            } //Switch case for searching an ID to delete a student
+            }
             case 3: 
             {
                 int id;
@@ -291,7 +289,7 @@ int main()
                     cout << "Student not found." << endl;
                 }
                 break;
-            } //Switch case for searching for a student ID value
+            }
             case 4: 
             {
                 string name;
@@ -308,7 +306,7 @@ int main()
                     cout << "Student not found." << endl;
                 }
                 break;
-            } //Switch case for searching for a student by name
+            }
             case 5: 
             {
                 int id;
@@ -330,17 +328,17 @@ int main()
                 getline(cin, newZip);
                 studentList.updateStudent(id, newName, newDob, newStreet, newCity, newState, newZip);
                 break;
-            } //Switch case for updating a student's information
+            }
             case 6: 
             {
                 break;
-            } //Switch case to exit program
+            }
             default: 
             {
                 break;
             }
         }
-    } while (choice != 6); //Repeats through menu after a decision is made until program is exited manually
+    } while (choice != 6);
 
     return 0;
-} //Main function
+}
