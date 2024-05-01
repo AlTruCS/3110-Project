@@ -13,6 +13,7 @@ To add a student to the database, the Linked List will create a student object u
 ### Binary Search Tree
 The Binary Search Tree will instead place the provided existing student object to the right of all values it is larger than, and to the left of all values it is smaller than, with the value coming from inputs in the main function.
 
+### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 0:00.00 | 0:00.00 |
@@ -35,6 +36,13 @@ After this, it will continue calling itself recursively, choosing the left node 
 
 The function ends whenever the node is found or it reaches a point where there are no valid nodes left to search; in the case of the former, it returns a null pointer. Otherwise, it will start from the left to check for any valid nodes under it, copy them to a temp node, put the data into the position of the original node, and then delete the temp node.
 
+### Time Complexities
+| Duration | Linked List | BST |
+| :------: |:-----------:|:---:|
+| Test #1 | 0:00.00 | 0:00.00 |
+| Test #2 | 0:00.00 | 0:00.00 |
+| Test #3 | 0:00.00 | 0:00.00 |
+
 ## Searching for a student from their ID number
 
 ### Linked List
@@ -44,6 +52,13 @@ This is handled very simply; a loop will iterate through the list, starting from
 Overall, the Binary Search Tree is handled very similarly; however, it will instead check to see if the supplied ID number is equal to, greater than, or lesser than the ID number of the current node. If it is equal, it returns the current node, while moving to the left or right node if it is less or greater than the current node's ID number respectively.
 
 This will continue until the node has been found or there are no valid nodes to search. The current node will be returned if the node has been found, otherwise it will return a null pointer.
+
+### Time Complexities
+| Duration | Linked List | BST |
+| :------: |:-----------:|:---:|
+| Test #1 | 0:00.00 | 0:00.00 |
+| Test #2 | 0:00.00 | 0:00.00 |
+| Test #3 | 0:00.00 | 0:00.00 |
 
 ## Searching for a student from their name
 
@@ -55,6 +70,13 @@ Similar in a sense to the ID search, this function checks the name within the he
 
 This will eventually iterate through the entire list from right to left; if the name is found, the ID number contained within the same node will be displayed. Otherwise, the function will end after all nodes have been visited.
 
+### Time Complexities
+| Duration | Linked List | BST |
+| :------: |:-----------:|:---:|
+| Test #1 | 0:00.00 | 0:00.00 |
+| Test #2 | 0:00.00 | 0:00.00 |
+| Test #3 | 0:00.00 | 0:00.00 |
+
 ## Updating and Displaying student records
 
 ### Linked List
@@ -64,3 +86,10 @@ If the function did not find the ID value in the Linked List, the function ends.
 
 ### Binary Search Tree
 In the case of the Binary Search Tree, the node is directly supplied to the function for modification in the same way done in the Linked List function. The node is supplied using the Search by ID function.
+
+### Time Complexities
+| Duration | Linked List | BST |
+| :------: |:-----------:|:---:|
+| Test #1 | 0:00.00 | 0:00.00 |
+| Test #2 | 0:00.00 | 0:00.00 |
+| Test #3 | 0:00.00 | 0:00.00 |
