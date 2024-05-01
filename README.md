@@ -52,5 +52,9 @@ This will eventually iterate through the entire list from right to left; if the 
 ## Updating student records when ID number is given; this will also display the student's information and allow any changes except for ID number.
 
 ### Linked List
+Updating a student node requires supplying all information relevant to create a student node, starting with the ID number of an existing student. The function will use the search by ID function to find the relevant student object, and then replace all data relating to it with the new data supplied by the function if the ID search was successful.
+
+If the function did not find the ID value in the Linked List, the function ends.
 
 ### Binary Search Tree
+In the case of the Binary Search Tree, the node is directly supplied to the function for modification in the same way done in the Linked List function. The node is supplied using the Search by ID function.
