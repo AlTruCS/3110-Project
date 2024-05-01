@@ -7,13 +7,27 @@ At their cores, the Linked List and Binary Search Tree function very similarly i
 
 ## Adding a student to the database
 
-To add a student to the database, the Linked List will create a student object using the data provided by the user and place it at the end of the list. By default, it adds all students from the CSV file to the list.
+### Linked List
+To add a student to the database, the Linked List will create a student object using the data provided by the user and place it at the end of the list - if the list is empty, it will assign this value to be the head of the list. By default, it adds all students from the CSV file to the list.
 
+### Binary Search Tree
 The Binary Search Tree will instead place the provided existing student object to the right of all values it is larger than, and to the left of all values it is smaller than, with the value coming from inputs in the main function.
 
 ## Deleting a student from the database based upon their ID number
 
+### Linked List
+Before starting the loop, the delete function will check to see if the list is either empty or the head is the target for deletion. In the case of the former, it will immediately end the function; in the case of the latter, it will store the current head into a temp node, change the head pointer to the following node, and then delete the original node.
 
+If neither of these ended the function, it will then iterate through the list with a loop, checking each node's ID value to see if it matches the one supplied by the function; this loop will only end when the ID value is found or the end of the list is reached.
+
+If the ID number is found, the nodes both before and after it are linked together, with the node being deleted immediately after and the function ending. If the ID number is not found by the end of the function, then the function will terminate on its own.
+
+### Binary Search Tree
+This system starts with a preliminary function, passing the root node to the primary delete function alongside the ID to search for. 
+
+After this, it will continue calling itself recursively, choosing the left node whenever the ID supplied is smaller than the current node's ID value and the right node whenever it is larger. 
+
+The function ends whenever the node is found or it reaches a point where there are no valid nodes left to search; in the case of the former, it returns a null pointer. Otherwise, it will start from the left to check for any valid nodes under it, copy them to a temp node, put the data into the position of the original node, and then delete the temp node.
 
 ## Searching for a student from their ID number
 
