@@ -45,9 +45,9 @@ The Binary Search Tree will instead place the provided existing student object t
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 76.7568 | 0:00.00 |
-| Test #2 | 74.7443 | 0:00.00 |
-| Test #3 | 72.3781 | 0:00.00 |
+| Test #1 | 76.7568 | 0.21040 |
+| Test #2 | 74.7443 | 0.22488 |
+| Test #3 | 72.3781 | 0.22417 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -142,9 +142,9 @@ The function ends whenever the node is found or it reaches a point where there a
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0.005922 | 0:00.00 |
-| Test #2 | 0.006020 | 0:00.00 |
-| Test #3 | 0.003843 | 0:00.00 |
+| Test #1 | 0.005922 | 0.000000793 |
+| Test #2 | 0.006020 | 0.000001126 |
+| Test #3 | 0.003843 | 0.000000980 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -190,9 +190,9 @@ This will continue until the node has been found or there are no valid nodes to 
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0.00589 | 0:00.00 |
-| Test #2 | 0.00376 | 0:00.00 |
-| Test #3 | 0.00594 | 0:00.00 |
+| Test #1 | 0.00589 | 0.000000876 |
+| Test #2 | 0.00376 | 0.000000825 |
+| Test #3 | 0.00594 | 0.000000793 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -234,9 +234,9 @@ This will eventually iterate through the entire list from right to left; if the 
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0.00585 | 0:00.00 |
-| Test #2 | 0.00621 | 0:00.00 |
-| Test #3 | 0.00609 | 0:00.00 |
+| Test #1 | 0.00585 | 0.00859 |
+| Test #2 | 0.00621 | 0.00934 |
+| Test #3 | 0.00609 | 0.00869 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -277,9 +277,9 @@ In the case of the Binary Search Tree, the node is directly supplied to the func
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0.00610 | 0:00.00 |
-| Test #2 | 0.00602 | 0:00.00 |
-| Test #3 | 0.00604 | 0:00.00 |
+| Test #1 | 0.00610 | 0.24084 |
+| Test #2 | 0.00602 | 0.21649 |
+| Test #3 | 0.00604 | 0.21324 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
