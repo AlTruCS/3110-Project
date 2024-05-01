@@ -14,7 +14,7 @@ To add a student to the database, the Linked List will create a student object u
 The Binary Search Tree will instead place the provided existing student object to the right of all values it is larger than, and to the left of all values it is smaller than, with the value coming from inputs in the main function.
 
 | Duration | Linked List | BST |
-| --------------- |:-------------:|:---:|
+| :------: |:-----------:|:---:|
 | Test #1 | 0:00.00 | 0:00.00 |
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
