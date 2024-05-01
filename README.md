@@ -2,7 +2,7 @@
 This program allows for the manipulation of student data from a given repository system, using both a Linked List and Binary Search Tree to organize and locate data.
 
 # Responsibilities
-* Alex: Documentation and Time Complexity calculation
+* Alex: Documentation and Runtimes/Time Complexity
 * Jason: Linked List
 * Michael: Binary Search Tree
 
