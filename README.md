@@ -6,13 +6,13 @@ This program allows for the manipulation of student data from a given repository
 * Jason: Linked List
 * Michael: Binary Search Tree
 
-#Compilation
+# Compilation
 This project is set up into two programs that share a CSV file. The Linked List program is entirely contained within `3110FinalLL.cpp`, while the main file for the Binary Search Tree is `testMain.cpp`. To separate the programs, move `3110FinalLL.cpp` into a separate folder, and use your compiler of choice (g++ shown as an example) with the following:
 
-##Linked List
+## Linked List
 `g++ main.cpp`
 
-##Binary Search Tree
+## Binary Search Tree
 `g++ main.cpp BSTree.cpp BSTNode.cpp`
 
 When running the programs, make sure that they are in separate folders from each other, and have a copy of `students.csv` in the folder of the program being run.
