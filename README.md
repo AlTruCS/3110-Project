@@ -56,6 +56,7 @@ The Binary Search Tree will instead place the provided existing student object t
             }
 
 ### Time Complexities
+
 #### All 100,000 items inserted into list
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
@@ -249,7 +250,7 @@ Similar in a sense to the ID search, this function checks the name within the he
 
 This will eventually iterate through the entire list from right to left; if the name is found, the ID number contained within the same node will be displayed. Otherwise, the function will end after all nodes have been visited.
 
-### Time Complexities####
+### Time Complexities
 
 #### Search for one item
 | Duration | Linked List | BST |
