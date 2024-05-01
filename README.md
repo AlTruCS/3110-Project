@@ -2,9 +2,9 @@
 This program allows for the manipulation of student data from a given repository system, using both a Linked List and Binary Search Tree to organize and locate data.
 
 # Responsibilities
-* Alex: Documentation and Runtimes/Time Complexity
-* Jason: Linked List
-* Michael: Binary Search Tree
+* Alex Trumble: Documentation and Runtimes/Time Complexity
+* Jason Weinstein: Linked List
+* Micheal Landsbaum: Binary Search Tree
 
 # Compilation
 This project is set up into two programs that share a CSV file. The Linked List program is entirely contained within `3110FinalLL.cpp`, while the main file for the Binary Search Tree is `testMain.cpp`. To separate the programs, move `3110FinalLL.cpp` into a separate folder, and use your compiler of choice (g++ shown as an example) with the following:
