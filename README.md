@@ -49,7 +49,7 @@ Similar in a sense to the ID search, this function checks the name within the he
 
 This will eventually iterate through the entire list from right to left; if the name is found, the ID number contained within the same node will be displayed. Otherwise, the function will end after all nodes have been visited.
 
-## Updating student records when ID number is given; this will also display the student's information and allow any changes except for ID number.
+## Updating and Displaying student records
 
 ### Linked List
 Updating a student node requires supplying all information relevant to create a student node, starting with the ID number of an existing student. The function will use the search by ID function to find the relevant student object, and then replace all data relating to it with the new data supplied by the function if the ID search was successful.
