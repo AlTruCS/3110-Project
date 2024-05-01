@@ -1,9 +1,13 @@
 # 3110-Project
 This program allows for the manipulation of student data from a given repository system, using both a Linked List and Binary Search Tree to organize and locate data.
 
+# Responsibilities
+* Alex: Documentation and Time Complexity calculation
+* Jason: Linked List
+* Michael: Binary Search Tree
+
 # Functions
 At their cores, the Linked List and Binary Search Tree function very similarly in regards to functionality: both structures will use a loop to iterate through themselves, checking each node until one valid for performing the operation has been met. However, the primary difference lies in how the correct node is determined.
-
 
 ## Adding a student to the database
 
@@ -41,9 +45,9 @@ The Binary Search Tree will instead place the provided existing student object t
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0:00.00 | 0:00.00 |
-| Test #2 | 0:00.00 | 0:00.00 |
-| Test #3 | 0:00.00 | 0:00.00 |
+| Test #1 | 76.7568 | 0:00.00 |
+| Test #2 | 74.7443 | 0:00.00 |
+| Test #3 | 72.3781 | 0:00.00 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -138,9 +142,9 @@ The function ends whenever the node is found or it reaches a point where there a
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0:00.00 | 0:00.00 |
-| Test #2 | 0:00.00 | 0:00.00 |
-| Test #3 | 0:00.00 | 0:00.00 |
+| Test #1 | 0.005922 | 0:00.00 |
+| Test #2 | 0.006020 | 0:00.00 |
+| Test #3 | 0.003843 | 0:00.00 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -186,9 +190,9 @@ This will continue until the node has been found or there are no valid nodes to 
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0:00.00 | 0:00.00 |
-| Test #2 | 0:00.00 | 0:00.00 |
-| Test #3 | 0:00.00 | 0:00.00 |
+| Test #1 | 0.00589 | 0:00.00 |
+| Test #2 | 0.00376 | 0:00.00 |
+| Test #3 | 0.00594 | 0:00.00 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -230,9 +234,9 @@ This will eventually iterate through the entire list from right to left; if the 
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0:00.00 | 0:00.00 |
-| Test #2 | 0:00.00 | 0:00.00 |
-| Test #3 | 0:00.00 | 0:00.00 |
+| Test #1 | 0.00585 | 0:00.00 |
+| Test #2 | 0.00621 | 0:00.00 |
+| Test #3 | 0.00609 | 0:00.00 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
@@ -273,9 +277,9 @@ In the case of the Binary Search Tree, the node is directly supplied to the func
 ### Time Complexities
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
-| Test #1 | 0:00.00 | 0:00.00 |
-| Test #2 | 0:00.00 | 0:00.00 |
-| Test #3 | 0:00.00 | 0:00.00 |
+| Test #1 | 0.00610 | 0:00.00 |
+| Test #2 | 0.00602 | 0:00.00 |
+| Test #3 | 0.00604 | 0:00.00 |
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
