@@ -31,6 +31,22 @@ The function ends whenever the node is found or it reaches a point where there a
 
 ## Searching for a student from their ID number
 
+### Linked List
+This is handled very simply; a loop will iterate through the list, starting from the head. If the ID number of the node matches the one supplied to the function, it will return a pointer to the current node and end the list; otherwise, it will move to the next. If it is not found by the end of the list, then it will return a null pointer instead.
+
+### Binary Search Tree
+Overall, the Binary Search Tree is handled very similarly; however, it will instead check to see if the supplied ID number is equal to, greater than, or lesser than the ID number of the current node. If it is equal, it returns the current node, while moving to the left or right node if it is less or greater than the current node's ID number respectively.
+
+This will continue until the node has been found or there are no valid nodes to search. The current node will be returned if the node has been found, otherwise it will return a null pointer.
+
 ## If name is not avaialble, searching for a student based upon name
 
+### Linked List
+
+### Binary Search Tree
+
 ## Updating student records when ID number is given; this will also display the student's information and allow any changes except for ID number.
+
+### Linked List
+
+### Binary Search Tree
