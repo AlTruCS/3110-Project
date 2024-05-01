@@ -45,6 +45,11 @@ The Binary Search Tree will instead place the provided existing student object t
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
 
+| O(?)        | Average     | Worst-Case | 
+| :---------: |:-----------:|:----------:|
+| Linked List | O(?) | O(?) |
+| BST | O(?) | O(?) |
+
 ## Deleting a student from the database based upon their ID number
 
 ### Linked List
@@ -137,6 +142,11 @@ The function ends whenever the node is found or it reaches a point where there a
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
 
+| O(?)        | Average     | Worst-Case | 
+| :---------: |:-----------:|:----------:|
+| Linked List | O(?) | O(?) |
+| BST | O(?) | O(?) |
+
 ## Searching for a student from their ID number
 
 ### Linked List
@@ -180,6 +190,11 @@ This will continue until the node has been found or there are no valid nodes to 
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
 
+| O(?)        | Average     | Worst-Case | 
+| :---------: |:-----------:|:----------:|
+| Linked List | O(?) | O(?) |
+| BST | O(?) | O(?) |
+
 ## Searching for a student from their name
 
 ### Linked List
@@ -219,6 +234,11 @@ This will eventually iterate through the entire list from right to left; if the 
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
 
+| O(?)        | Average     | Worst-Case | 
+| :---------: |:-----------:|:----------:|
+| Linked List | O(?) | O(?) |
+| BST | O(?) | O(?) |
+
 ## Updating and Displaying student records
 
 ### Linked List
@@ -256,3 +276,8 @@ In the case of the Binary Search Tree, the node is directly supplied to the func
 | Test #1 | 0:00.00 | 0:00.00 |
 | Test #2 | 0:00.00 | 0:00.00 |
 | Test #3 | 0:00.00 | 0:00.00 |
+
+| O(?)        | Average     | Worst-Case | 
+| :---------: |:-----------:|:----------:|
+| Linked List | O(?) | O(?) |
+| BST | O(?) | O(?) |
