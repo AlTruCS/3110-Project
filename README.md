@@ -6,8 +6,21 @@ This program allows for the manipulation of student data from a given repository
 * Jason: Linked List
 * Michael: Binary Search Tree
 
+#Compilation
+This project is set up into two programs that share a CSV file. The Linked List program is entirely contained within `3110FinalLL.cpp`, while the main file for the Binary Search Tree is `testMain.cpp`. To separate the programs, move `3110FinalLL.cpp` into a separate folder, and use your compiler of choice (g++ shown as an example) with the following:
+
+##Linked List
+`g++ main.cpp`
+
+##Binary Search Tree
+`g++ main.cpp BSTree.cpp BSTNode.cpp`
+
+When running the programs, make sure that they are in separate folders from each other, and have a copy of `students.csv` in the folder of the program being run.
+
 # Functions
-At their cores, the Linked List and Binary Search Tree function very similarly in regards to functionality: both structures will use a loop to iterate through themselves, checking each node until one valid for performing the operation has been met. However, the primary difference lies in how the correct node is determined.
+At their cores, the Linked List and Binary Search Tree function very similarly in regards to functionality: both structures will use a loop to iterate through themselves, checking each node until one valid for performing the operation has been met. 
+
+However, the primary difference lies in how the correct node is determined. For a linked list, the process is entirely linear, going down the list one at a time until the desired item is found; meanwhile, a Binary Search Tree makes an additional comparison at each layer, cutting the possible remaining nodes to search for in half. Even though the Linked Lists are easier to manage and have more versatility due to not requiring sorting, Linked Lists more than make up for it with their difference in speed.
 
 ## Adding a student to the database
 
@@ -43,6 +56,7 @@ The Binary Search Tree will instead place the provided existing student object t
             }
 
 ### Time Complexities
+#### All 100,000 items inserted into list
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 76.7568 | 0.21040 |
@@ -51,8 +65,8 @@ The Binary Search Tree will instead place the provided existing student object t
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
-| Linked List | O(?) | O(?) |
-| BST | O(?) | O(?) |
+| Linked List | O(N) | O(N) |
+| BST | O(log n) | O(N) |
 
 ## Deleting a student from the database based upon their ID number
 
@@ -140,6 +154,8 @@ The function ends whenever the node is found or it reaches a point where there a
         }
 
 ### Time Complexities
+
+#### Deletion of one item
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 0.005922 | 0.000000793 |
@@ -148,8 +164,8 @@ The function ends whenever the node is found or it reaches a point where there a
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
-| Linked List | O(?) | O(?) |
-| BST | O(?) | O(?) |
+| Linked List | O(N) | O(N) |
+| BST | O(log N) | O(N) |
 
 ## Searching for a student from their ID number
 
@@ -188,6 +204,8 @@ Overall, the Binary Search Tree is handled very similarly; however, it will inst
 This will continue until the node has been found or there are no valid nodes to search. The current node will be returned if the node has been found, otherwise it will return a null pointer.
 
 ### Time Complexities
+
+#### Search for one item
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 0.00589 | 0.000000876 |
@@ -196,8 +214,8 @@ This will continue until the node has been found or there are no valid nodes to 
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
-| Linked List | O(?) | O(?) |
-| BST | O(?) | O(?) |
+| Linked List | O(N) | O(N) |
+| BST | O(log N) | O(N) |
 
 ## Searching for a student from their name
 
@@ -231,7 +249,9 @@ Similar in a sense to the ID search, this function checks the name within the he
 
 This will eventually iterate through the entire list from right to left; if the name is found, the ID number contained within the same node will be displayed. Otherwise, the function will end after all nodes have been visited.
 
-### Time Complexities
+### Time Complexities####
+
+#### Search for one item
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 0.00585 | 0.00859 |
@@ -240,8 +260,8 @@ This will eventually iterate through the entire list from right to left; if the 
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
-| Linked List | O(?) | O(?) |
-| BST | O(?) | O(?) |
+| Linked List | O(N) | O(N) |
+| BST | O(log N) | O(N) |
 
 ## Updating and Displaying student records
 
@@ -275,6 +295,8 @@ In the case of the Binary Search Tree, the node is directly supplied to the func
     }
 
 ### Time Complexities
+
+#### Updating one node
 | Duration | Linked List | BST |
 | :------: |:-----------:|:---:|
 | Test #1 | 0.00610 | 0.24084 |
@@ -283,5 +305,5 @@ In the case of the Binary Search Tree, the node is directly supplied to the func
 
 | O(?)        | Average     | Worst-Case | 
 | :---------: |:-----------:|:----------:|
-| Linked List | O(?) | O(?) |
-| BST | O(?) | O(?) |
+| Linked List | O(N) | O(N) |
+| BST | O(log N) | O(N) |
