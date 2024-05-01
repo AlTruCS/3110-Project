@@ -39,11 +39,15 @@ Overall, the Binary Search Tree is handled very similarly; however, it will inst
 
 This will continue until the node has been found or there are no valid nodes to search. The current node will be returned if the node has been found, otherwise it will return a null pointer.
 
-## If name is not avaialble, searching for a student based upon name
+## Searching for a student from their name
 
 ### Linked List
+This function is handled identically to searching based on ID number; the only change made is the type of variable being supplied and searched for.
 
 ### Binary Search Tree
+Similar in a sense to the ID search, this function checks the name within the head node to see if it matches the name supplied to the function. It will then check to see if the left and right nodes are null, and perform the same function on them if so, starting from the right. 
+
+This will eventually iterate through the entire list from right to left; if the name is found, the ID number contained within the same node will be displayed. Otherwise, the function will end after all nodes have been visited.
 
 ## Updating student records when ID number is given; this will also display the student's information and allow any changes except for ID number.
 
